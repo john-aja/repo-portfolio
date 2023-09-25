@@ -10,6 +10,7 @@ const SkillPage: React.FC = () => {
 	const incrementCounts = () => {
 		let projects = 0;
 		let experience = 0;
+		console.log(projects);
 
 		const projectsInterval = setInterval(() => {
 			if (projects < 13) {
