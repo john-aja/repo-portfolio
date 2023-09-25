@@ -1,0 +1,92 @@
+.skill-container {
+	background-color: var(--bg-primary);
+	padding-top: 4rem;
+	padding-bottom: 6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	border-bottom: 2px solid var(--border-bg);
+}
+
+.skill-intro {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.skill-content-container {
+	display: flex;
+	row-gap: 3rem;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.skill-content-container div {
+	width: 45%;
+}
+
+.skill-section,
+.passion-section {
+	width: 100%;
+}
+
+.skill-header,
+.passion-header {
+	font-size: 32px;
+	color: var(--text-red);
+	font-weight: 600;
+	margin-top: 0;
+}
+
+.skill-ul {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	/* align-content: stretch; */
+	height: 75%;
+	margin: 0;
+	justify-content: space-between;
+}
+
+.skill-ul li {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.96px;
+	color: var(--text-white);
+	list-style: none;
+	/* line-height: 50px; */
+}
+
+.passion-text {
+	color: var(--text-white);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 36px;
+	letter-spacing: 0.96px;
+	margin: 0;
+	height: 75%;
+}
+
+.count {
+	font-size: 48px;
+	color: var(--text-gray);
+	font-weight: 700;
+	margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	.skill-intro,
+	.skill-ul {
+		gap: 1rem;
+	}
+	.skill-content-container {
+		flex-direction: column;
+	}
+	.skill-content-container div {
+		width: 100%;
+	}
+	.passion-header {
+		margin-top: 0;
+	}
+}

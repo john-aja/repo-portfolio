@@ -1,0 +1,41 @@
+.works-container {
+	background-color: var(--bg-primary);
+	padding-top: 4rem;
+	padding-bottom: 6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	position: relative;
+	border-bottom: 2px solid var(--border-bg);
+}
+
+.title {
+	font-size: 20px;
+	color: var(--text-gray);
+	font-weight: 800;
+	text-align: center;
+	opacity: 0.5;
+	/* margin: 0; */
+}
+
+.works-intro {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	position: relative;
+}
+
+.my-works {
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+	flex-wrap: wrap;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+	.works-intro {
+		gap: 1rem;
+	}
+}

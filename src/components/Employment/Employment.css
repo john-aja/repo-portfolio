@@ -1,0 +1,41 @@
+.employment-container {
+	background-color: var(--bg-primary);
+	padding-top: 4rem;
+	padding-bottom: 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	border-bottom: 2px solid var(--border-bg);
+}
+
+.title {
+	font-size: 10px;
+	color: var(--text-gray);
+	font-weight: 800;
+	text-align: center;
+}
+
+.employment-intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.company-logo {
+	width: 269px;
+}
+
+.employment-content {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 36px;
+	color: var(--text-white);
+	text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+	.company-logo {
+		width: 220px;
+	}
+}

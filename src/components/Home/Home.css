@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+
+.home-container {
+	/* height: 80vh;  */
+	background-color: var(--bg-primary);
+	color: var(--text-white);
+	border-bottom: 2px solid var(--border-bg);
+	/* padding: 2rem; */
+}
+
+span {
+	color: var(--text-red);
+}
+
+.intro {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+
+	width: 85%;
+}
+
+.hello {
+	font-size: 20px;
+	text-transform: uppercase;
+	opacity: 0.5;
+	font-weight: 600;
+}
+
+.name {
+	font-family: "WindSong", cursive;
+	font-size: 48px;
+
+	margin: 0 0 1rem 0;
+}
+
+.skill {
+	font-size: 36px;
+	font-weight: 800;
+	margin: 0rem;
+}
+
+.intro-content {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 38px;
+	margin-top: 0;
+}
+
+.intro-content-mobile {
+	display: none;
+}
+
+.works-button {
+	padding: 1rem 2rem;
+	background: transparent;
+	border: 1px solid var(--text-white);
+	border-radius: 33px;
+	color: var(--text-white);
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.works-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	border-radius: 33px;
+	background-color: var(--text-white);
+	transition: all 0.4s ease;
+}
+
+.works-button:hover.works-button::before {
+	width: 100%;
+	z-index: -1;
+}
+
+.works-button:hover {
+	color: var(--bg-primary);
+	z-index: 9999;
+}
+
+@media only screen and (max-width: 1000px) {
+	.intro {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.intro {
+		padding-top: 4rem;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.skill {
+		font-size: 32px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.intro-content {
+		display: none;
+	}
+
+	.intro-content-mobile {
+		display: block;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 38px;
+		margin-top: 0;
+	}
+}

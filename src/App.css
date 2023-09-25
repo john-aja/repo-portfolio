@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+:root {
+	--bg-primary: #141414;
+	--text-red: #ff5757;
+	--text-gray: #cecece;
+	--text-white: #ffffff;
+	--border-bg: #797979;
+	-bg-white-opacity-low: #ffffff4a;
+	-bg-black-opacity-low: #1212124a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scroll-counter {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	width: 3.8rem;
+	height: 3.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: all 0.4s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scroll-counter img {
+	animation: dance ease 0.8s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes dance {
+	0% {
+		transform: rotate(60deg);
+	}
+
+	50% {
+		transform: rotate(-80deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
 }
 
-.App-link {
-  color: #61dafb;
+.progressBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5px;
+	background-color: var(--text-red);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-app {
+	position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+	.scroll-counter {
+		width: 2.8rem;
+		height: 2.8rem;
+	}
+
+	.scroll-counter img {
+		width: 50%;
+	}
 }
