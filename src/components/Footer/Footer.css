@@ -1,7 +1,7 @@
 .footer-container {
 	background-color: var(--bg-primary);
 	padding-top: 6rem;
-	/* padding-bottom: 4rem; */
+	padding-bottom: 2rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -24,7 +24,7 @@
 .footer-content-container {
 	display: flex;
 	flex-direction: column;
-	gap: 8rem;
+	gap: 6rem;
 }
 
 .social-icons {
@@ -78,6 +78,17 @@
 	}
 	.footer-text p {
 		font-size: 14px;
+		/* text-align: center; */
+	}
+	/* .footer-title {
+		text-align: center;
+	} */
+	/* .social-icons {
+		justify-content: center;
+	} */
+
+	.footer-container {
+		padding-bottom: 1rem;
 	}
 }
 

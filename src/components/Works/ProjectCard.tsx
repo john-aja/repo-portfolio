@@ -23,6 +23,8 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 	const activeImageRef = useRef<HTMLImageElement | null>(null);
 
 	useEffect(() => {
+		console.log(currentProjectIndex);
+
 		if (activeImageRef.current) {
 			const activeImage = activeImageRef.current;
 			const container = activeImage.parentElement;
@@ -39,11 +41,11 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 	const changeProject = (index: any) => {
 		console.log(index);
 		document.querySelector(".shadow")?.classList.add("active");
+
 		if (index !== 13 && index !== -1) {
 			setTimeout(() => {
 				document.querySelector(".shadow")?.classList.remove("active");
-			}, 700);
-
+			}, 500);
 			setCurrentProjectIndex(index);
 			setActiveClass(projects, index);
 		}
@@ -51,7 +53,7 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 			index = 0;
 			setTimeout(() => {
 				document.querySelector(".shadow")?.classList.remove("active");
-			}, 700);
+			}, 500);
 			setCurrentProjectIndex(index);
 			setActiveClass(projects, index);
 		}
@@ -59,7 +61,7 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 			index = 12;
 			setTimeout(() => {
 				document.querySelector(".shadow")?.classList.remove("active");
-			}, 700);
+			}, 500);
 			setCurrentProjectIndex(index);
 			setActiveClass(projects, index);
 		}
@@ -79,21 +81,6 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 	return (
 		<div className="project-container">
 			<div className="img-main">
-				{projects.map((v, index) => (
-					<img
-						key={index}
-						style={
-							v.active
-								? { transform: "translateX(0%) scale(1)", opacity: "1" }
-								: { transform: "translateX(0%) scale(0)", opacity: "0" }
-						}
-						src={v.image}
-						alt=""
-					/>
-				))}
-			</div>
-
-			<div className="project-content">
 				<div className="progress-mob">
 					<img
 						src={Navigation}
@@ -108,7 +95,22 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 						onClick={() => changeProject(currentProjectIndex + 1)}
 					/>
 				</div>
+				{projects.map((v, index) => (
+					<img
+						className="hero_img"
+						key={index}
+						style={
+							v.active
+								? { transform: "translateX(0%) scale(1)", opacity: "1" }
+								: { transform: "translateX(0%) scale(0)", opacity: "0" }
+						}
+						src={v.image}
+						alt=""
+					/>
+				))}
+			</div>
 
+			<div className="project-content">
 				<div className="shadow"></div>
 				{projects.map((v, index) => (
 					<div
@@ -123,7 +125,6 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 								  }
 								: {
 										position: "absolute",
-										opacity: "0",
 								  }
 						}
 					>

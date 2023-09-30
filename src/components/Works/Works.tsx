@@ -3,84 +3,54 @@ import "./Works.css";
 import ProjectCard from "./ProjectCard";
 
 import TravelistIcon from "../../assets/projects/logo/travelist.svg";
-import Travelist from "../../assets/projects/TRAVELIST.png";
+import Travelist from "../../assets/projects/TRAVELIST.jpeg";
 
 import LibraryIcon from "../../assets/projects/logo/library.svg";
-import Library from "../../assets/projects/LIBRARY.png";
+import Library from "../../assets/projects/LIBRARY.jpg";
 
-import Bankist from "../../assets/projects/BANKIST.png";
+import Bankist from "../../assets/projects/BANKIST.jpg";
 import BankistIcon from "../../assets/projects/logo/bankist.svg";
 
-import Schemes from "../../assets/projects/SCHEMES.png";
+import Schemes from "../../assets/projects/SCHEMES.jpg";
 import SchemesIcon from "../../assets/projects/logo/schemes.svg";
 
-import Fabmatic from "../../assets/projects/FABMATIC.png";
+import Fabmatic from "../../assets/projects/FABMATIC.jpg";
 import FabmaticIcon from "../../assets/projects/logo/fabmatic.svg";
 
 import PortfolioIcon from "../../assets/projects/logo/portfolio.svg";
-import Portfolio from "../../assets/projects/PORTFOLIO.png";
+import Portfolio from "../../assets/projects/PORTFOLIO.jpg";
 
 import TrackTwinIcon from "../../assets/projects/logo/track-twin.svg";
-import TrackTwin from "../../assets/projects/MEMORY-GAME.png";
+import TrackTwin from "../../assets/projects/MEMORYGAME.jpg";
 
 import ManojEngineeringIcon from "../../assets/projects/logo/engineering.svg";
-import ManojEngineering from "../../assets/projects/ENGINEERING.png";
+import ManojEngineering from "../../assets/projects/ENGINEERING.jpg";
 
-import Galaxy from "../../assets/projects/GALAXY.png";
+import Galaxy from "../../assets/projects/GALAXY.jpg";
 import GalaxyIcon from "../../assets/projects/logo/galaxy.svg";
 
-import Dice from "../../assets/projects/DICE.png";
+import Dice from "../../assets/projects/DICE.jpg";
 import DiceIcon from "../../assets/projects/logo/dice.svg";
 
-import Mappy from "../../assets/projects/MAPPY.png";
+import Mappy from "../../assets/projects/MAPPY.jpg";
 import MappyIcon from "../../assets/projects/logo/mappy.svg";
 
-import Guess from "../../assets/projects/GUESS NUMBER.png";
+import Guess from "../../assets/projects/GUESS NUMBER.jpg";
 import GuessIcon from "../../assets/projects/logo/guess.svg";
 
-import Blue from "../../assets/projects/BLUE-CONSTRUCTION.png";
+import Blue from "../../assets/projects/BLUE-CONSTRUCTION.jpg";
 import BlueIcon from "../../assets/projects/logo/blue.svg";
 
 const projects = [
-	{
-		title: "Bankist",
-		description:
-			"A simple bank app that enables users to log in and perform various banking actions using HTML, CSS, and JavaScript.",
-		icon: BankistIcon,
-		image: Bankist,
-		active: true,
-		link: "https://banker-app.netlify.app/",
-		repo: "https://github.com/john-aja/Bankist",
-	},
 	{
 		title: "Library",
 		description:
 			"This app allows users to manage a library, view books, mark them as taken, and vote for unavailable books.",
 		icon: LibraryIcon,
 		image: Library,
-		active: false,
+		active: true,
 		link: "https://library-management-system-lms.el.r.appspot.com/",
 		repo: "https://github.com/john-aja/Library-Management-System---V1",
-	},
-	{
-		title: "Travelist",
-		description:
-			"This single-page website highlights a travel agency's services: flight and restaurant bookings, and trip organization.",
-		icon: TravelistIcon,
-		image: Travelist,
-		active: false,
-		link: "https://travelistapp.netlify.app/",
-		repo: "https://github.com/john-aja/Travelist",
-	},
-	{
-		title: "Schemes",
-		description:
-			"The Schemes-IN Web Application is a user-friendly and intuitive platform that aims to provide easy access to a variety of welfare schemes available.",
-		icon: SchemesIcon,
-		image: Schemes,
-		active: false,
-		link: "https://schemesin.netlify.app/",
-		repo: "https://github.com/john-aja/Schemes-IN-Frontend",
 	},
 	{
 		title: "Fabmatic",
@@ -93,6 +63,16 @@ const projects = [
 		repo: "https://github.com/john-aja/Fabmatic-Traders",
 	},
 	{
+		title: "Schemes",
+		description:
+			"This application utilizes Angular and Tailwind technologies that aims to provide easy access to a variety of schemes.",
+		icon: SchemesIcon,
+		image: Schemes,
+		active: false,
+		link: "https://schemesin.netlify.app/",
+		repo: "https://github.com/john-aja/Schemes-IN-Frontend",
+	},
+	{
 		title: "Porfolio - 2k21",
 		description:
 			"My portfolio site offers insights into my work, skills, and experiences, featuring a responsive design.",
@@ -102,6 +82,7 @@ const projects = [
 		link: "https://ajramportfolio.netlify.app/",
 		repo: "https://github.com/john-aja/Portfolio-2021",
 	},
+
 	{
 		title: "TrackTwin",
 		description:
@@ -122,7 +103,47 @@ const projects = [
 		link: "https://manojengineering.netlify.app",
 		repo: "https://github.com/john-aja/Manoj-Engineering",
 	},
+	{
+		title: "Travelist",
+		description:
+			"This single-page website highlights a travel agency's services: flight and restaurant bookings, and trip organization.",
+		icon: TravelistIcon,
+		image: Travelist,
+		active: false,
+		link: "https://travelistapp.netlify.app/",
+		repo: "https://github.com/john-aja/Travelist",
+	},
+	{
+		title: "Bankist",
+		description:
+			"A simple bank app that enables users to log in and perform various banking actions using HTML, CSS, and JavaScript.",
+		icon: BankistIcon,
+		image: Bankist,
+		active: false,
+		link: "https://banker-app.netlify.app/",
+		repo: "https://github.com/john-aja/Bankist",
+	},
 
+	{
+		title: "Mappy",
+		description:
+			"A Tracking web-app for activities like cycling and running, built with HTML, CSS, and JavaScript.",
+		icon: MappyIcon,
+		image: Mappy,
+		active: false,
+		link: "https://mappyapp.netlify.app/",
+		repo: "https://github.com/john-aja/Activity-Tracker-Mappy",
+	},
+	{
+		title: "Dice Game",
+		description:
+			"Web-based app allows you to play an exciting dice game. Developed using HTML, CSS, and JavaScript.",
+		icon: DiceIcon,
+		image: Dice,
+		active: false,
+		link: "https://rolldicegameapp.netlify.app/",
+		repo: "https://github.com/john-aja/Dice-Game",
+	},
 	{
 		title: "Galaxy Explore",
 		description:
@@ -132,26 +153,6 @@ const projects = [
 		active: false,
 		link: "https://exploregalaxy.netlify.app/",
 		repo: "https://github.com/john-aja/Galaxy-Explorer",
-	},
-	{
-		title: "Dice Game",
-		description:
-			"Web-based app allows you to play an exciting dice game against an opponent. Developed using HTML, CSS, and JavaScript.",
-		icon: DiceIcon,
-		image: Dice,
-		active: false,
-		link: "https://rolldicegameapp.netlify.app/",
-		repo: "https://github.com/john-aja/Dice-Game",
-	},
-	{
-		title: "Mappy",
-		description:
-			"Track your activities and stats with this simple app, including running, cycling, and more, built with HTML, CSS, and JavaScript.",
-		icon: MappyIcon,
-		image: Mappy,
-		active: false,
-		link: "https://mappyapp.netlify.app/",
-		repo: "https://github.com/john-aja/Activity-Tracker-Mappy",
 	},
 
 	{

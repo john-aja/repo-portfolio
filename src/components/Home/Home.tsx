@@ -6,7 +6,7 @@ const HomePage: React.FC = () => {
 	const text =
 		"A passionate Frontend Developer based in Chennai. I specialise in creating responsive and pixel-perfect web applications, with user-friendly and optimised experiences. My journey involves both frontend and backend technologies, allowing me to build comprehensive web solutions.";
 	const textMobile =
-		"A passionate Frontend Developer based in Chennai. I specialise in creating responsive and pixel-perfect web applications. My journey involves both frontend and backends.";
+		"A passionate Frontend Developer based in Chennai. I specialise in creating responsive and pixel-perfect web applications. My journey involves both frontend and backend";
 
 	const redWord = "frontend";
 	const redWordOne = "backend";
@@ -19,11 +19,22 @@ const HomePage: React.FC = () => {
 		padding: "0",
 	};
 
+	const scrollToSection = (sectionId: string) => {
+		const section = document.getElementById(sectionId);
+		if (section) {
+			const scrollPosition = section.offsetTop;
+			window.scrollTo({
+				top: scrollPosition,
+				behavior: "smooth",
+			});
+		}
+	};
+
 	return (
 		<div className="home-container">
 			<div className="intro">
 				<p className="hello">Howdy, it's </p>
-				<p className="name">Ram || John</p>
+				<p className="name">Ram </p>
 				<p className="skill">Front End Developer</p>
 
 				{/* <img
@@ -76,7 +87,12 @@ const HomePage: React.FC = () => {
 					))}
 				</p>
 
-				<button className="works-button">Works</button>
+				<button
+					className="works-button"
+					onClick={() => scrollToSection("works")}
+				>
+					Works
+				</button>
 			</div>
 		</div>
 	);

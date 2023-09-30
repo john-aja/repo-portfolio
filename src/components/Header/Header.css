@@ -1,9 +1,3 @@
-header {
-	position: sticky;
-	top: 0;
-	width: 100%;
-}
-
 .logo {
 	width: 5rem;
 	height: 5rem;
@@ -17,17 +11,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.nav-mob {
-	width: 85%;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	padding: 2rem 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	display: none;
 }
 
 .links {
@@ -74,4 +57,7 @@ ul li img {
 }
 
 @media only screen and (max-width: 730px) {
+	.nav {
+		display: none;
+	}
 }

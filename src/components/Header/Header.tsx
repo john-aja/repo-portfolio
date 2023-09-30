@@ -7,16 +7,37 @@ import mail from "../../assets/Mail.svg";
 import "./Header.css";
 
 const Header: React.FC = () => {
+	const scrollToSection = (sectionId: string) => {
+		const section = document.getElementById(sectionId);
+		if (section) {
+			const scrollPosition = section.offsetTop;
+			window.scrollTo({
+				top: scrollPosition,
+				behavior: "smooth",
+			});
+		}
+	};
+
 	return (
 		<header>
 			<nav className="nav">
 				<img className="logo" src={myLogo} alt="" />
 				<ul className="links">
-					<li className="link">Home</li>
-					<li className="link">About</li>
-					<li className="link">Works</li>
-					<li className="link">Skills</li>
-					<li className="link">Contact</li>
+					<li className="link" onClick={() => scrollToSection("home")}>
+						Home
+					</li>
+					<li className="link" onClick={() => scrollToSection("about")}>
+						About
+					</li>
+					<li className="link" onClick={() => scrollToSection("works")}>
+						Works
+					</li>
+					<li className="link" onClick={() => scrollToSection("skills")}>
+						Skills
+					</li>
+					<li className="link" onClick={() => scrollToSection("contact")}>
+						Contact
+					</li>
 				</ul>
 				<ul className="img-links">
 					<li>
@@ -29,10 +50,6 @@ const Header: React.FC = () => {
 						<img className="img" src={mail} alt="" />
 					</li>
 				</ul>
-			</nav>
-
-			<nav className="nav-mob">
-				<img className="logo-mob" src={myLogo} alt="" />
 			</nav>
 		</header>
 	);

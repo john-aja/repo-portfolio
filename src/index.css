@@ -7,7 +7,7 @@
 	--text-white: #ffffff;
 	--border-bg: #797979;
 	--bg-white-opacity-low: #ffffff4a;
-	--bg-black-opacity-low: #1212124a;
+	--bg-black-opacity-low: #121212e8;
 }
 
 body {
@@ -26,7 +26,10 @@ body {
 	margin: 0;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-	background-color: #141414;
+	scrollbar-width: none;
+
+	overflow: -moz-scrollbars-none;
+	background-color: var(--bg-primary);
 }
 
 body::-webkit-scrollbar {

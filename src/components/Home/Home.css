@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
 
 .home-container {
-	/* height: 80vh;  */
+	display: flex;
+	align-items: flex-end;
 	background-color: var(--bg-primary);
 	color: var(--text-white);
 	border-bottom: 2px solid var(--border-bg);
-	/* padding: 2rem; */
 }
 
 span {
@@ -107,11 +107,14 @@ span {
 		display: none;
 	}
 
+	/* .intro {
+		text-align: center;
+	} */
+
 	.intro-content-mobile {
 		display: block;
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: 300;
-		line-height: 38px;
-		margin-top: 0;
+		line-height: 34px;
 	}
 }

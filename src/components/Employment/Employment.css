@@ -37,5 +37,10 @@
 @media only screen and (max-width: 500px) {
 	.company-logo {
 		width: 220px;
+		/* align-self: flex-start; */
+	}
+	.employment-content {
+		text-align: left;
+		font-size: 18px;
 	}
 }

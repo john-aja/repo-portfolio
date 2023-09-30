@@ -10,7 +10,6 @@ const SkillPage: React.FC = () => {
 	const incrementCounts = () => {
 		let projects = 0;
 		let experience = 0;
-		console.log(projects);
 
 		const projectsInterval = setInterval(() => {
 			if (projects < 13) {
@@ -38,7 +37,6 @@ const SkillPage: React.FC = () => {
 				if (entry.isIntersecting) {
 					incrementCounts();
 				} else {
-					// Reset counts to 0 when the component is out of view
 					setProjectsCount(0);
 					setYearsOfExperience(0);
 				}
@@ -88,7 +86,7 @@ const SkillPage: React.FC = () => {
 						<p className="count">{projectsCount}+</p>
 					</div>
 					<div className="passion-section">
-						<p className="passion-header">Experience Milestones</p>
+						<p className="passion-header">Years in the Field</p>
 						<p className="count">{yearsOfExperience}+</p>
 					</div>
 				</div>
