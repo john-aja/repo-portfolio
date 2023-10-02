@@ -6,6 +6,55 @@
 	background-color: var(--bg-primary);
 	color: var(--text-white);
 	border-bottom: 2px solid var(--border-bg);
+	position: relative;
+	overflow: hidden;
+	/* height: 80vh; */
+	align-items: center;
+}
+
+.my-img {
+	position: relative;
+	z-index: 99;
+	bottom: -1.5rem;
+	right: -1.5rem;
+	height: 80vh;
+	width: 35%;
+}
+
+.my-img img {
+	height: 110%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	object-fit: cover;
+	/* box-shadow: 0px 129px 157px 4px #141414 inset; */
+	filter: grayscale(1);
+}
+
+.new-container {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 30%;
+	background-color: var(--text-red);
+	/* opacity: 0.5; */
+	z-index: 0;
+	/* filter: blur(11.5px); */
+}
+
+.new-container::before {
+	position: absolute;
+	bottom: 8rem;
+	right: -12.5rem;
+	content: "JOHN";
+	transform: rotate(90deg);
+	z-index: 999;
+	font-size: 200px;
+	color: white;
+	opacity: 0.1;
+	-webkit-text-stroke: 20px;
+	letter-spacing: 8px;
 }
 
 span {
@@ -14,8 +63,7 @@ span {
 
 .intro {
 	padding-top: 8rem;
-	padding-bottom: 8rem;
-
+	padding-bottom: 4rem;
 	width: 85%;
 }
 
@@ -44,6 +92,9 @@ span {
 	font-weight: 300;
 	line-height: 38px;
 	margin-top: 0;
+	width: 65%;
+	z-index: 999;
+	position: relative;
 }
 
 .intro-content-mobile {
@@ -84,15 +135,115 @@ span {
 	z-index: 9999;
 }
 
-@media only screen and (max-width: 1000px) {
-	.intro {
-		width: 100%;
+@media only screen and (max-width: 1400px) {
+	.my-img {
+		right: -4.5rem;
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1300px) {
+	.my-img {
+		right: -7.5rem;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.my-img {
+		right: -12rem;
+	}
+}
+
+@media only screen and (max-height: 600px) {
+	.home-container {
+		height: 80vh;
+	}
 	.intro {
-		padding-top: 4rem;
+		width: 100%;
+		padding-top: 2rem;
+	}
+	.my-img {
+		right: 0;
+		bottom: -2rem;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.new-container {
+		width: 0;
+	}
+	.my-img {
+		right: -24rem;
+	}
+	.intro-content {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	.intro-content {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.my-img {
+		right: -26rem;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.home-container {
+		display: block;
+		position: relative;
+		height: 80vh;
+	}
+	.intro-content {
+		width: 100%;
+	}
+	.new-container {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		height: 50%;
+		bottom: -16rem;
+		top: auto;
+		filter: blur(20px);
+		border-radius: 50%;
+		opacity: 0.5;
+	}
+
+	.home-container .my-img {
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+	}
+	.intro {
+		padding-top: 2rem;
+		padding-bottom: 4rem;
+		width: 100%;
+		z-index: 9;
+		position: relative;
+	}
+	.my-img {
+		position: absolute;
+		right: 0;
+		bottom: -1.5rem;
+		z-index: 0;
+		height: 100%;
+	}
+	.my-img img {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		height: min-content;
+	}
+
+	.new-container::before {
+		display: none;
+		background-color: transparent;
 	}
 }
 
@@ -106,15 +257,29 @@ span {
 	.intro-content {
 		display: none;
 	}
-
-	/* .intro {
-		text-align: center;
-	} */
-
 	.intro-content-mobile {
 		display: block;
 		font-size: 18px;
 		font-weight: 300;
 		line-height: 34px;
+	}
+	.name {
+		margin: 0;
+	}
+	.intro-content-mobile {
+		margin-top: 6px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.works-button {
+		padding: 0.5rem 1rem;
+	}
+	.intro-content-mobile {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.skill {
+		font-size: 24px;
 	}
 }

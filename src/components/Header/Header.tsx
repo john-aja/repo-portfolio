@@ -3,7 +3,6 @@ import myLogo from "../../assets/aj_logo.svg";
 import insta from "../../assets/Instagram.svg";
 import linkedin from "../../assets/LinkedIn.svg";
 import mail from "../../assets/Mail.svg";
-
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -41,13 +40,32 @@ const Header: React.FC = () => {
 				</ul>
 				<ul className="img-links">
 					<li>
-						<img className="img" src={insta} alt="" />
+						<a
+							href="https://www.instagram.com/im_jon_aj"
+							target="_blank"
+							rel="noreferrer"
+						>
+							{" "}
+							<img className="img" src={insta} alt="" />
+						</a>
 					</li>
 					<li>
-						<img className="img" src={linkedin} alt="" />
+						<a
+							href="https://www.linkedin.com/in/ram-aj/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img className="img" src={linkedin} alt="" />
+						</a>
 					</li>
 					<li>
-						<img className="img" src={mail} alt="" />
+						<a
+							href="mailto:janakiram.0695@gmail.com?subject= Inquiry from Your Portfolio Website&body=I visited your portfolio and would like to discuss potential opportunities or collaborations."
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img className="img" src={mail} alt="" />
+						</a>
 					</li>
 				</ul>
 			</nav>

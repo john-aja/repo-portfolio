@@ -1,15 +1,17 @@
 import React from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
+import MyImage from "../../assets/my-pic-color.png";
 
 const HomePage: React.FC = () => {
-	const text =
-		"A passionate Frontend Developer based in Chennai. I specialise in creating responsive and pixel-perfect web applications, with user-friendly and optimised experiences. My journey involves both frontend and backend technologies, allowing me to build comprehensive web solutions.";
+	// const text =
+	// 	"A passionate Frontend Developer based in Chennai. I specialise in creating responsive and pixel-perfect web applications, with user-friendly and optimised experiences. My journey involves both frontend and backend technologies, allowing me to build comprehensive web solutions.";
 	const textMobile =
-		"A passionate Frontend Developer based in Chennai. I specialise in creating responsive and pixel-perfect web applications. My journey involves both frontend and backend";
-
+		"A passionate Frontend Developer based in Chennai. I specialise in creating responsive and pixel-perfect web applications. My journey involves both frontend and backend.";
+	const text =
+		"A passionate Frontend Developer based in Chennai. I specialise in creating responsive and pixel-perfect web applications. My journey involves both frontend and backend.";
 	const redWord = "frontend";
-	const redWordOne = "backend";
+	const redWordOne = "backend.";
 	const words = text.split(" ");
 	const wordsMobie = textMobile.split(" ");
 	const space = {
@@ -94,6 +96,11 @@ const HomePage: React.FC = () => {
 					Works
 				</button>
 			</div>
+
+			<div className="my-img">
+				<img src={MyImage} alt="" />
+			</div>
+			<div className="new-container"></div>
 		</div>
 	);
 };

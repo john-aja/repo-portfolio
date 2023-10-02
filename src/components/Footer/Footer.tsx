@@ -15,10 +15,34 @@ const FooterPage: React.FC = () => {
 				</p>
 				<div className="footer-text">
 					<div className="social-icons">
-						<img src={Instagram} alt="" />
-						<img src={Linkedin} alt="" />
-						<img src={Mail} alt="" />
-						<img src={Git} alt="" />
+						<a
+							href="https://www.instagram.com/im_jon_aj"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={Instagram} alt="" />
+						</a>
+						<a
+							href="https://www.linkedin.com/in/ram-aj/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={Linkedin} alt="" />
+						</a>
+						<a
+							href="mailto:janakiram.0695@gmail.com?subject= Inquiry from Your Portfolio Website&body=I visited your portfolio and would like to discuss potential opportunities or collaborations."
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={Mail} alt="" />
+						</a>
+						<a
+							href="https://github.com/john-aja"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={Git} alt="" />
+						</a>
 					</div>
 					<p>
 						Feel free to reach out using the contact details above or use the
