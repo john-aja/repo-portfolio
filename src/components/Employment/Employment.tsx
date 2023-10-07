@@ -9,7 +9,7 @@ const EmploymentPage: React.FC = () => {
 	return (
 		<div className="employment-container">
 			<div className="employment-intro">
-				<p className="title">CURRENTLY ENGAGED WITH</p>
+				<h2 className="title">CURRENTLY ENGAGED WITH</h2>
 
 				<img className="company-logo" src={companylogo} alt="company-logo" />
 			</div>

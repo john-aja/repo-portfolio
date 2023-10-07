@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
 		<div className="home-container">
 			<div className="intro">
 				<p className="hello">Howdy, it's </p>
-				<p className="name">Ram </p>
+				<h1 className="name">Ram </h1>
 				<p className="skill">Front End Developer</p>
 
 				{/* <img
@@ -53,6 +53,12 @@ const HomePage: React.FC = () => {
 							transition={{ delay: index * 0.06 }}
 							style={{
 								display: "inline-block",
+								fontWeight:
+									word === redWord
+										? "800"
+										: word === redWordOne
+										? "800"
+										: "400",
 								color:
 									word === redWord
 										? "var(--text-red)"

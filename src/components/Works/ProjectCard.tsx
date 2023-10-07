@@ -130,7 +130,7 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 					>
 						<div className="project-title">
 							<img src={v.icon} alt="" />
-							<p>{v.title}</p>
+							<p className="truncate-text">{v.title}</p>
 						</div>
 
 						<p className="project-description">{v.description}</p>

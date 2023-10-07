@@ -56,7 +56,7 @@ const SkillPage: React.FC = () => {
 	return (
 		<div className="skill-container">
 			<div className="skill-intro">
-				<p className="title">CRAFTING THE WEB</p>
+				<h2 className="title">CRAFTING THE WEB</h2>
 				<div className="skill-content-container" ref={skillsSectionRef}>
 					<div className="passion-section">
 						<p className="passion-header">Fueled by Passion</p>

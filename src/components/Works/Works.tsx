@@ -84,7 +84,7 @@ const projects = [
 	},
 
 	{
-		title: "TrackTwin",
+		title: "Track Twin",
 		description:
 			"This web-based memory game challenges players to match pairs of cards using HTML, CSS, and JavaScript.",
 		icon: TrackTwinIcon,
@@ -94,7 +94,7 @@ const projects = [
 		repo: "https://github.com/john-aja/GameApp-TrackTwin",
 	},
 	{
-		title: "Manoj Eng.",
+		title: "Manoj Engineering",
 		description:
 			"Manoj Engineering's website highlights their manufacturing expertise, built with HTML, CSS, and JavaScript.",
 		icon: ManojEngineeringIcon,
@@ -180,7 +180,7 @@ const WorksPage: React.FC = () => {
 	return (
 		<div className="works-container">
 			<div className="works-intro">
-				<p className="title">BROWSE MY CREATIONS</p>
+				<h2 className="title">BROWSE MY CREATIONS</h2>
 
 				<div className="my-works">
 					<ProjectCard projects={projects} />
