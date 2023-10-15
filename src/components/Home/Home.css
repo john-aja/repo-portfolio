@@ -22,12 +22,11 @@
 }
 
 .my-img img {
-	height: 110%;
+	height: 105%;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	object-fit: cover;
-	/* box-shadow: 0px 129px 157px 4px #141414 inset; */
 	filter: grayscale(1);
 }
 
@@ -38,9 +37,7 @@
 	height: 100%;
 	width: 30%;
 	background-color: var(--text-red);
-	/* opacity: 0.5; */
 	z-index: 0;
-	/* filter: blur(11.5px); */
 }
 
 .new-container::before {

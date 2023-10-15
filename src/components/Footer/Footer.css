@@ -31,7 +31,6 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	margin-left: -0.5rem;
 }
 
 .social-icons a {
@@ -43,6 +42,11 @@
 .social-icons img {
 	margin: 0;
 	width: 4rem;
+	transition: all 0.3s ease;
+}
+
+.social-icons img:hover {
+	transform: scale(1.1);
 }
 
 .footer-text p {

@@ -41,7 +41,7 @@ import GuessIcon from "../../assets/projects/logo/guess.svg";
 import Blue from "../../assets/projects/BLUE-CONSTRUCTION.jpg";
 import BlueIcon from "../../assets/projects/logo/blue.svg";
 
-const projects = [
+const projects: Project[] = [
 	{
 		title: "Library",
 		description:
@@ -176,14 +176,29 @@ const projects = [
 		repo: "https://github.com/john-aja/Blue-Construction",
 	},
 ];
-const WorksPage: React.FC = () => {
+
+interface Project {
+	title: string;
+	description: string;
+	icon: string;
+	image: string;
+	active: boolean;
+	link: string;
+	repo: string;
+}
+
+interface Theme {
+	theme: boolean;
+}
+
+const WorksPage: React.FC<Theme> = ({ theme }) => {
 	return (
 		<div className="works-container">
 			<div className="works-intro">
 				<h2 className="title">BROWSE MY CREATIONS</h2>
 
 				<div className="my-works">
-					<ProjectCard projects={projects} />
+					<ProjectCard projects={projects} theme={theme} />
 				</div>
 			</div>
 		</div>

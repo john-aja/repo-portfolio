@@ -190,14 +190,14 @@
 }
 
 .link-button {
-	background-color: var(--text-white);
-	color: var(--bg-primary);
+	background-color: #ececec;
+	color: #141414;
 }
 
 .site-button {
-	background-color: transparent;
-	color: var(--bg-primary);
-	color: var(--text-white);
+	background-color: #141414;
+	/* color: var(--bg-primary); */
+	color: #ececec;
 }
 
 .site-button::before,
@@ -213,12 +213,12 @@
 }
 
 .site-button::before {
-	background-color: var(--text-white);
+	background-color: #ececec;
 	left: 0;
 }
 
 .link-button::before {
-	background-color: var(--bg-primary);
+	background-color: #141414;
 	right: 0;
 }
 
@@ -229,12 +229,12 @@
 }
 
 .site-button:hover {
-	color: var(--bg-primary);
+	color: #141414;
 	z-index: 9999;
 }
 
 .link-button:hover {
-	color: var(--text-white);
+	color: #ffffff;
 	z-index: 9999;
 }
 

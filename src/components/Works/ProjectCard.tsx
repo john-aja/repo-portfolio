@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navigation from "../../assets/nav-arrow.svg";
+import NavigationDark from "../../assets/arrow-dark.svg";
 import LinkIcon from "../../assets/link.svg";
 import GitIcon from "../../assets/git.svg";
 import "./ProjectCard.css";
@@ -16,9 +17,10 @@ type Project = {
 
 interface ProjectContainerProps {
 	projects: Project[];
+	theme: boolean;
 }
 
-const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
+const ProjectCard: React.FC<ProjectContainerProps> = ({ projects, theme }) => {
 	const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
 	const activeImageRef = useRef<HTMLImageElement | null>(null);
 
@@ -83,13 +85,13 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 			<div className="img-main">
 				<div className="progress-mob">
 					<img
-						src={Navigation}
+						src={theme ? NavigationDark : Navigation}
 						alt=""
 						onClick={() => changeProject(currentProjectIndex - 1)}
 					/>
 
 					<img
-						src={Navigation}
+						src={theme ? NavigationDark : Navigation}
 						alt=""
 						className="previous"
 						onClick={() => changeProject(currentProjectIndex + 1)}
@@ -129,7 +131,17 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 						}
 					>
 						<div className="project-title">
-							<img src={v.icon} alt="" />
+							<img
+								style={
+									theme
+										? {
+												filter: "drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.386))",
+										  }
+										: {}
+								}
+								src={v.icon}
+								alt=""
+							/>
 							<p className="truncate-text">{v.title}</p>
 						</div>
 
@@ -172,13 +184,13 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects }) => {
 					</div>
 					<div className="progress">
 						<img
-							src={Navigation}
+							src={theme ? NavigationDark : Navigation}
 							alt=""
 							onClick={() => changeProject(currentProjectIndex - 1)}
 						/>
 
 						<img
-							src={Navigation}
+							src={theme ? NavigationDark : Navigation}
 							alt=""
 							className="previous"
 							onClick={() => changeProject(currentProjectIndex + 1)}
