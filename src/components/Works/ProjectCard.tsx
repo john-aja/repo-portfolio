@@ -115,7 +115,7 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects, theme }) => {
 			</div>
 
 			<div className="project-content">
-				<div className="shadow"></div>
+				<div className={theme ? "shadow theme" : "shadow"}></div>
 				{projects.map((v, index) => (
 					<div
 						key={index}
