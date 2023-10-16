@@ -254,12 +254,7 @@
 	opacity: 0;
 	width: 15rem;
 	height: 100%;
-	background: linear-gradient(
-		90deg,
-		rgba(0, 0, 0, 0) 0%,
-		rgba(14, 14, 14, 0.69) 74.14%,
-		#141414 135.57%
-	);
+	background: var(--linear-gradient-nav);
 
 	z-index: 9999;
 	transition: all 0.2s ease;
@@ -313,12 +308,8 @@
 		left: -5rem;
 		top: 0;
 		opacity: 0;
-		background: linear-gradient(
-			90deg,
-			#141414 0%,
-			rgba(14, 14, 14, 0.69) 60.02%,
-			rgba(0, 0, 0, 0) 135.57%
-		);
+		background: var(--linear-gradient-nav);
+
 		transition: all 1s ease;
 	}
 	.shadow.active {

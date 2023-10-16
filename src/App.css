@@ -10,7 +10,7 @@
 	--linear-gradient-nav: linear-gradient(
 		90deg,
 		rgba(0, 0, 0, 0) 0%,
-		rgba(220, 220, 220, 0.383) 51%,
+		rgba(29, 29, 29, 0.383) 51%,
 		rgba(0, 0, 0, 0) 100%
 	);
 }
@@ -26,9 +26,9 @@
 	--nav-shadow: 1px 1px 5px rgb(0 0 0 / 14%);
 	--linear-gradient-nav: linear-gradient(
 		90deg,
-		rgb(15 15 15 / 7%) 0%,
-		rgb(28 28 28 / 38%) 51%,
-		rgb(35 33 33 / 0%) 100%
+		rgba(255, 255, 255, 0.07) 0%,
+		rgba(255, 255, 255, 0.38) 51%,
+		rgba(255, 255, 255, 0) 100%
 	);
 }
 

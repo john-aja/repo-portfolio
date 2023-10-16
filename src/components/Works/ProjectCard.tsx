@@ -86,12 +86,14 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects, theme }) => {
 				<div className="progress-mob">
 					<img
 						src={theme ? NavigationDark : Navigation}
+						style={theme ? { filter: "invert(1)" } : {}}
 						alt=""
 						onClick={() => changeProject(currentProjectIndex - 1)}
 					/>
 
 					<img
 						src={theme ? NavigationDark : Navigation}
+						style={theme ? { filter: "invert(1)" } : {}}
 						alt=""
 						className="previous"
 						onClick={() => changeProject(currentProjectIndex + 1)}
@@ -135,7 +137,7 @@ const ProjectCard: React.FC<ProjectContainerProps> = ({ projects, theme }) => {
 								style={
 									theme
 										? {
-												filter: "drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.386))",
+												filter: "invert(1)",
 										  }
 										: {}
 								}
