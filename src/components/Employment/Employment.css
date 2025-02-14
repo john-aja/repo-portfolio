@@ -24,6 +24,7 @@
 
 .company-logo {
 	width: 269px;
+	filter:invert(1);
 }
 
 .employment-content {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Employment.css";
-import companylogo from "../../assets/company_logo.svg";
+import companylogo from "../../assets/ebm_logo.png";
 
 interface Theme {
 	theme: boolean;
@@ -8,7 +8,7 @@ interface Theme {
 
 const EmploymentPage: React.FC<Theme> = ({ theme }) => {
 	const text =
-		"I work as a Frontend Developer at Surfboard Payments Company, where I'm dedicated to crafting an efficient dashboard. This dashboard is integral to our payment solutions, featuring a robust KYC process. My role blends frontend development with our mission to redefine payments, ensuring a smooth user experience and operational excellence at Surfboard Payments Company.";
+		"I work as a Senior Full Stack Developer at ebm-papst Pvt Ltd, where I contribute to the development of a scalable web application. My role involves frontend development with Angular, backend implementation using Node.js, and database management with PostgreSQL. I also design UI/UX mockups in Figma before development to ensure a seamless user experience. My focus is on building efficient, high-performance applications that align with business needs and improve workflow efficiency.";
 
 	return (
 		<div className="employment-container">
